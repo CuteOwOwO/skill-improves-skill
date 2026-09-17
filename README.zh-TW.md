@@ -2,6 +2,8 @@
 
 [English](README.md) · [繁體中文](README.zh-TW.md)
 
+**一個會測試並改善你其他 skills，讓它們更適合不同模型與 agent 環境的 meta-skill。**
+
 ![老師封存重測題，三位學生共用同一本 skill 手冊；驗收閘門接受兩個結果，並退回一個未通過的補丁。](assets/skill-generalizer-hero.png)
 
 `skill-generalizer` 幫助同一份 skill 更適合不同執行目標，包括模型、版本、reasoning level、工具組合或 agent context。它先觀察全新執行的實際行為，再加入一條有證據的最小修改；只有當每個目標都通過封存重測，而且沒有其他行為退步時，修改才會保留。

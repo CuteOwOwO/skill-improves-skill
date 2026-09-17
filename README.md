@@ -2,6 +2,8 @@
 
 [English](README.md) · [繁體中文](README.zh-TW.md)
 
+**A meta-skill that tests and improves your other skills across models and agent setups.**
+
 ![A teacher seals a retest while three students work from one shared skill book; a validation gate accepts two results and rejects one patch.](assets/skill-generalizer-hero.png)
 
 `skill-generalizer` helps one skill work better across different execution targets: models, versions, reasoning levels, tool sets, or agent contexts. It observes fresh runs, adds one small evidence-backed instruction, and keeps the change only when every target passes a sealed retest without regression.

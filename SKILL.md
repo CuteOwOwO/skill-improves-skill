@@ -1,65 +1,34 @@
 ---
 name: skill-generalizer
-description: Adapt an existing skill for multiple target models by having a teacher probe observable behavior, turn confirmed failures into minimal model-neutral lessons, and accept changes only after fresh cross-model retesting. Use when porting, calibrating, or regression-testing a skill across models; do not use for untested prompt rewriting.
+description: Improve an existing skill across multiple models by testing observable behavior, adding one evidence-backed instruction, and keeping it only when fresh retests pass without regression. Use when adapting or validating a skill for several target models.
 ---
 
 # Skill Generalizer
 
-Use a teacher to discover behavioral gaps. Do not infer what a model needs from its name, apparent intelligence, or self-report.
+Improve one common skill from observed behavior—not model stereotypes or self-reports.
 
-## Teacher-student loop
+## Workflow
 
-1. Freeze the source skill, target models, reasoning settings, tools, and expected behaviors. Give each behavior a stable ID and mark any behavior whose single failure is critical.
-2. Before seeing any student answer, have a capable teacher generate and freeze the whole evaluation packet:
-   - diagnostic scenarios that require the model to apply each behavior;
-   - nearby contrasts that test the behavior's decision boundary;
-   - answer keys with observable pass criteria and forbidden behavior;
-   - unseen retest scenarios that exercise the same behavior through materially different surface details.
-   Read [scenario design](references/scenario-design.md) when generating or reviewing this packet.
-3. Give the unchanged skill and diagnostic questions to fresh instances of every target model. Do not show them keys, lessons, or retest questions. Judge what they do, not whether they say they understand.
-4. Have the teacher grade all answers against the frozen key. Audit borderline failures with a second fresh grader before learning from them. Exclude harness errors and ambiguous questions.
-5. A lesson is eligible only when the same conceptual failure appears in at least two independent model-case cells, or when one predeclared critical behavior fails.
-6. Turn one eligible gap into one minimal lesson. State the observable action, boundary, or output explicitly. Do not mention model names, diagnostic scenarios, or answer-key solutions. Do not rewrite unrelated parts of the skill.
-7. Freeze the candidate. On the unseen retest, run fresh source-skill and candidate-skill students for every target under the same conditions. Grade them blind to condition when possible.
-8. Keep the lesson only if every target passes the repaired behavior and no previously passing behavior regresses. Otherwise return the candidate as unvalidated and keep the source skill.
+1. Read the source skill and list the few behaviors that define success. Mark any behavior whose single failure is critical.
+2. Before testing, have a teacher create and freeze:
+   - diagnostic scenarios and nearby contrasts;
+   - observable answer criteria;
+   - a sealed retest that checks the same behaviors through different scenarios.
+3. Give the unchanged skill and diagnostic scenarios to fresh instances of every target model. Do not show them the keys or retest.
+4. Grade what the models actually decide, do, and produce. A lesson is eligible only when the same noncritical gap appears at least twice, or one predeclared critical behavior fails.
+5. Patch one gap with one small, model-neutral rule. Name the required action, boundary, or output explicitly; do not mention model names or copy a test answer into the skill.
+6. Give the source and candidate skills to fresh target instances on the sealed retest. Keep the patch only if every target passes the repaired behavior and no previously passing behavior regresses.
+7. If the candidate fails, keep the source skill and label the candidate unvalidated. Any new attempt needs a new sealed retest.
 
-The teacher may generate new scenarios for every run, but a scenario becomes immutable once the evaluation packet is frozen. Keep a small fixed regression set for comparison across versions and a newly generated sealed retest for resistance to memorization.
+The teacher may generate new scenarios for each run, but questions and keys become fixed before student answers exist. Prefer a concrete output field or decision rule when vague prose is ignored.
 
-Stop after one lesson round. A second attempt requires a newly written, still-hidden retest; never tune on an exposed retest. If a teacher creates a question after reading student failures, treat it as a development case rather than a valid retest.
-
-## Lesson shape
-
-Record each proposed lesson as:
-
-```json
-{
-  "target_behavior": "stable behavior ID",
-  "evidence": ["model/case failure IDs"],
-  "rule": "one model-neutral imperative",
-  "expected_observation": "what a passing answer or action must contain"
-}
-```
-
-Prefer an explicit output slot or decision rule when vague prose was ignored. For example, require a distinct `Changed files` field instead of saying only that changed files should be discussed.
-
-## Publishable result
-
-Publish one concise common skill, not one version per model. Preserve the source intent and include only lessons that passed retesting. Do not include model names, scores, test scenarios, grading commentary, or failed candidate rules in the published skill; keep those in the evaluation artifacts.
-
-If no candidate passes, return the unchanged source skill plus an explicitly unvalidated candidate. Never silently publish a partially successful patch. See [common skill output example](references/common-skill-output-example.md) for the intended separation between the public skill and its evidence bundle.
-
-## Acceptance and claims
-
-- One exploratory draw can find candidate gaps, but it does not establish stable model behavior. Use repeated fresh draws for reliability claims.
-- Do not average away a target failure. A common skill fits only when every requested target meets the declared behavior contract.
-- A higher total score does not excuse a regression elsewhere.
-- The teacher proposes and grades; fresh target executions provide the evidence.
-- If the candidate fails its retest, report what improved and what did not. Do not call it fitted.
-
-## Required output
+## Return
 
 Return:
 
-- `SKILL.md`: the accepted common skill, or the unchanged source when no candidate passes;
-- `candidate-SKILL.md`: only when a proposed patch remains unvalidated;
-- an evidence bundle containing the frozen packet, lesson ledger, compact target-by-condition table, raw answers, grading, and limitations.
+- one accepted common `SKILL.md`, or the unchanged source skill;
+- the proposed lesson and the failures that justified it;
+- a compact source-versus-candidate table for every target;
+- limitations such as single draws, unavailable target runs, or unvalidated candidates.
+
+Never claim cross-model fit when one requested target still fails, even if the average score improves.

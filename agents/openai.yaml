@@ -1,7 +1,7 @@
 interface:
   display_name: "Skill Generalizer"
-  short_description: "Fit one skill reliably across multiple models"
-  default_prompt: "Use $skill-generalizer to adapt this skill across my target models with calibration evidence."
+  short_description: "Fit one skill across target configurations"
+  default_prompt: "Use $skill-generalizer to adapt this skill across my target configurations with behavioral evidence."
 
 policy:
   allow_implicit_invocation: true

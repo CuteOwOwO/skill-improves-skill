@@ -2,7 +2,7 @@
 
 [English](README.md) · [繁體中文](README.zh-TW.md)
 
-**一個會測試並改善你其他 skills，讓它們更適合不同模型與 agent 環境的 meta-skill。**
+**每個模型都有自己的個性——你的 skill 有為它們調整過嗎？**
 
 ![老師封存重測題，三位學生共用同一本 skill 手冊；驗收閘門接受兩個結果，並退回一個未通過的補丁。](assets/skill-generalizer-hero.png)
 

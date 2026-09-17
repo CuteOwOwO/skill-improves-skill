@@ -2,7 +2,7 @@
 
 [English](README.md) · [繁體中文](README.zh-TW.md)
 
-**A meta-skill that tests and improves your other skills across models and agent setups.**
+**Every model has a personality of its own—but has your skill been adapted for them?**
 
 ![A teacher seals a retest while three students work from one shared skill book; a validation gate accepts two results and rejects one patch.](assets/skill-generalizer-hero.png)
 

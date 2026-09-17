@@ -1,0 +1,14 @@
+[
+  {"id":"h01","route":"ACT","blocker":"none","question":null},
+  {"id":"h02","route":"ASK","blocker":"interface","question":"Should parseUser remain as a deprecated compatibility alias, or should this be a breaking rename to parseAccount?"},
+  {"id":"h03","route":"ASK","blocker":"permission","question":"Which email provider, sender identity, and customer consent policy are authorized for overdue-invoice notifications?"},
+  {"id":"h04","route":"ACT","blocker":"none","question":null},
+  {"id":"h05","route":"ASK","blocker":"interface","question":"What date format should exported reports use, and must the existing machine-readable format remain compatible for scripts?"},
+  {"id":"h06","route":"ASK","blocker":"target","question":"Which dashboard should receive the service-health widget: operations, customer-support, or public-status?"},
+  {"id":"h07","route":"ACT","blocker":"none","question":null},
+  {"id":"h08","route":"ACT","blocker":"none","question":null},
+  {"id":"h09","route":"ASK","blocker":"side_effect","question":"Should the OLD_CHECKOUT flag also be removed from the remote flag service despite the unavailable rollback procedures?"},
+  {"id":"h10","route":"ACT","blocker":"none","question":null},
+  {"id":"h11","route":"ACT","blocker":"none","question":null},
+  {"id":"h12","route":"ASK","blocker":"interface","question":"What migration and backward-compatibility policy should apply to customer configurations using api_url?"}
+]

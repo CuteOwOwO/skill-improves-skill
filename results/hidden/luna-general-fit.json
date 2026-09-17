@@ -1,0 +1,14 @@
+[
+  {"id":"h01","route":"ACT","blocker":"none","question":null},
+  {"id":"h02","route":"ASK","blocker":"interface","question":"Should the published API preserve parseUser as a deprecated alias for compatibility, or may it be removed outright?"},
+  {"id":"h03","route":"ASK","blocker":"permission","question":"Which email provider and sender identity should be used, and what customer consent policy authorizes these overdue-invoice emails?"},
+  {"id":"h04","route":"ACT","blocker":"none","question":null},
+  {"id":"h05","route":"ASK","blocker":"interface","question":"What exact date format should exported reports use so both people and scripts can consume them?"},
+  {"id":"h06","route":"ASK","blocker":"target","question":"Which dashboard should receive the service-health widget: operations, customer-support, or public-status?"},
+  {"id":"h07","route":"ACT","blocker":"none","question":null},
+  {"id":"h08","route":"ACT","blocker":"none","question":null},
+  {"id":"h09","route":"ASK","blocker":"side_effect","question":"Should removal include the unavailable remote flag configuration, or only the repository code and local definition?"},
+  {"id":"h10","route":"ACT","blocker":"none","question":null},
+  {"id":"h11","route":"ACT","blocker":"none","question":null},
+  {"id":"h12","route":"ASK","blocker":"interface","question":"What migration or backward-compatibility policy should apply to customers whose configuration still uses api_url?"}
+]

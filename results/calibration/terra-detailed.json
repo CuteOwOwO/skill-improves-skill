@@ -1,0 +1,18 @@
+[
+  {"id":"c01","route":"ACT","blocker":"none","question":null},
+  {"id":"c02","route":"ASK","blocker":"interface","question":"Should --colour remain supported as a backward-compatible alias for existing automation?"},
+  {"id":"c03","route":"ASK","blocker":"behavior","question":"Which CSV import error categories and user-facing messages should be provided?"},
+  {"id":"c04","route":"ACT","blocker":"none","question":null},
+  {"id":"c05","route":"ASK","blocker":"permission","question":"Which analytics provider and user-consent/privacy requirements should the signup flow use?"},
+  {"id":"c06","route":"ASK","blocker":"side_effect","question":"Can you confirm that LEGACY_DEPLOY_TOKEN is not required by any external deployment configuration before it is removed?"},
+  {"id":"c07","route":"ASK","blocker":"target","question":"Which dashboard—finance, sales, or executive—should display the monthly revenue report?"},
+  {"id":"c08","route":"ACT","blocker":"none","question":null},
+  {"id":"c09","route":"ACT","blocker":"none","question":null},
+  {"id":"c10","route":"ACT","blocker":"none","question":null},
+  {"id":"c11","route":"ACT","blocker":"none","question":null},
+  {"id":"c12","route":"ASK","blocker":"permission","question":"Which identity provider, tenant, credential scope, and authorization policy should employee SSO use?"},
+  {"id":"c13","route":"ACT","blocker":"none","question":null},
+  {"id":"c14","route":"ASK","blocker":"behavior","question":"Can you provide a reproduction or failing trace and identify the affected checkout path and expected fallback behavior?"},
+  {"id":"c15","route":"ASK","blocker":"target","question":"Which settings surface—personal, workspace, or organization—should contain the profile card?"},
+  {"id":"c16","route":"ASK","blocker":"interface","question":"What retirement and compatibility policy should apply to existing external clients of the public webhook endpoint?"}
+]

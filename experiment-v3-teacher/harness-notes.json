@@ -1,0 +1,7 @@
+[
+  {
+    "phase": "diagnostic",
+    "issue": "Luna returned q1 through q6 instead of d1 through d6 because the protocol schema example used q1 without explicitly requiring copied input IDs.",
+    "resolution": "Treat answers by input order for content grading, do not attribute the ID mismatch to the source bug-fixing skill, and clarify the protocol before retest."
+  }
+]

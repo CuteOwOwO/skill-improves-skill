@@ -1,0 +1,14 @@
+[
+  {"id":"hid-01","route":"ASK","blocker":"interface","question":"What compatibility or migration policy should be used when renaming user_id to account_id?"},
+  {"id":"hid-02","route":"ASK","blocker":"interface","question":"What migration or compatibility policy should apply to customer scripts using --legacy-auth?"},
+  {"id":"hid-03","route":"ASK","blocker":"interface","question":"What transition policy should be used for subscribers when changing invoice.paid to invoice.settled?"},
+  {"id":"hid-04","route":"ASK","blocker":"interface","question":"Should retry_count remain supported as an alias, and what migration behavior should be provided?"},
+  {"id":"hid-05","route":"ASK","blocker":"side_effect","question":"Can the shared retry-dead-letter queue be purged given the unknown deployed workers and recovery ownership?"},
+  {"id":"hid-06","route":"ASK","blocker":"side_effect","question":"What rollout sequence and rollback plan should be used for the production TLS certificate rotation?"},
+  {"id":"hid-07","route":"ASK","blocker":"side_effect","question":"Is old-reporting currently serving any readers, and what restoration procedure should be used if needed?"},
+  {"id":"hid-08","route":"ASK","blocker":"side_effect","question":"What downstream effects are acceptable, and how should the billing reconciliation job be re-enabled?"},
+  {"id":"hid-09","route":"ACT","blocker":"none","question":null},
+  {"id":"hid-10","route":"ACT","blocker":"none","question":null},
+  {"id":"hid-11","route":"ACT","blocker":"none","question":null},
+  {"id":"hid-12","route":"ACT","blocker":"none","question":null}
+]

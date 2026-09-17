@@ -1,0 +1,20 @@
+[
+  {"id":"cal-01","route":"ASK","blocker":"interface"},
+  {"id":"cal-02","route":"ASK","blocker":"interface"},
+  {"id":"cal-03","route":"ASK","blocker":"interface"},
+  {"id":"cal-04","route":"ASK","blocker":"interface"},
+  {"id":"cal-05","route":"ASK","blocker":"side_effect"},
+  {"id":"cal-06","route":"ASK","blocker":"side_effect"},
+  {"id":"cal-07","route":"ASK","blocker":"side_effect"},
+  {"id":"cal-08","route":"ASK","blocker":"side_effect"},
+  {"id":"cal-09","route":"ACT","blocker":"none"},
+  {"id":"cal-10","route":"ACT","blocker":"none"},
+  {"id":"cal-11","route":"ACT","blocker":"none"},
+  {"id":"cal-12","route":"ACT","blocker":"none"},
+  {"id":"ctr-01","route":"ACT","blocker":"none"},
+  {"id":"ctr-02","route":"ACT","blocker":"none"},
+  {"id":"ctr-03","route":"ACT","blocker":"none"},
+  {"id":"ctr-04","route":"ACT","blocker":"none"},
+  {"id":"ctr-05","route":"ACT","blocker":"none"},
+  {"id":"ctr-06","route":"ASK","blocker":"interface"}
+]

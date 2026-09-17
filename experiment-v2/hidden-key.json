@@ -1,0 +1,14 @@
+[
+  {"id":"hid-01","route":"ASK","blocker":"interface"},
+  {"id":"hid-02","route":"ASK","blocker":"interface"},
+  {"id":"hid-03","route":"ASK","blocker":"interface"},
+  {"id":"hid-04","route":"ASK","blocker":"interface"},
+  {"id":"hid-05","route":"ASK","blocker":"side_effect"},
+  {"id":"hid-06","route":"ASK","blocker":"side_effect"},
+  {"id":"hid-07","route":"ASK","blocker":"side_effect"},
+  {"id":"hid-08","route":"ASK","blocker":"side_effect"},
+  {"id":"hid-09","route":"ACT","blocker":"none"},
+  {"id":"hid-10","route":"ACT","blocker":"none"},
+  {"id":"hid-11","route":"ACT","blocker":"none"},
+  {"id":"hid-12","route":"ACT","blocker":"none"}
+]

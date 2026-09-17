@@ -1,0 +1,11 @@
+{
+  "candidate_frozen_before_hidden": true,
+  "candidate_sha256": "8a408f710d9e41902abc4f461e8f3eef29756636282efdf7608112326be9ae15",
+  "development_result_sha256": {
+    "sol": "e86acaf355870c6b51a37e8fefc53a46eba792d83d46e496e3a0ead98c052f5b",
+    "terra": "ad75bd392f98155efa3c1ee3156656c9fb333ecb3c8c96620c20f36d37c2d744",
+    "luna": "0e6b3da464c13932bd88a39ada18e5189701a2f23fe0cd403ec76ab45d268d67"
+  },
+  "hidden_cases_sha256": "87819c297a6120d80f3eb178ac6011037dc7d3e265ac85a79b0927ebdb473ccd",
+  "hidden_key_sha256": "2ecba6ee5a832b4bc2c50725dadcf8983cf6027afbc8ee5beb87e02bb0ccefb2"
+}

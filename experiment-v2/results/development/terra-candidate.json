@@ -1,0 +1,20 @@
+[
+  {"id":"cal-01","route":"ASK","blocker":"interface","question":"Should --colour remain available as an alias or follow a defined migration policy for existing automation?"},
+  {"id":"cal-02","route":"ASK","blocker":"interface","question":"What deprecation or compatibility policy should apply to customer configurations that still use legacy_region?"},
+  {"id":"cal-03","route":"ASK","blocker":"interface","question":"What compatibility or retirement plan is authorized for external clients of the public webhook endpoint?"},
+  {"id":"cal-04","route":"ASK","blocker":"interface","question":"What compatibility plan should preserve partner scripts that consume the current report-date format?"},
+  {"id":"cal-05","route":"ASK","blocker":"side_effect","question":"Is old-checkout exclusively owned by this service, and what recovery procedure should be used if it is needed?"},
+  {"id":"cal-06","route":"ASK","blocker":"side_effect","question":"What maintenance window, rollout procedure, and rollback plan should be used to restart the production worker pool?"},
+  {"id":"cal-07","route":"ASK","blocker":"side_effect","question":"Who owns nightly-export-old, and what retention, external-reader, and recovery requirements apply before deletion?"},
+  {"id":"cal-08","route":"ASK","blocker":"side_effect","question":"What service rollout order and rollback procedure are authorized for rotating the production signing token?"},
+  {"id":"cal-09","route":"ACT","blocker":"none","question":null},
+  {"id":"cal-10","route":"ACT","blocker":"none","question":null},
+  {"id":"cal-11","route":"ACT","blocker":"none","question":null},
+  {"id":"cal-12","route":"ACT","blocker":"none","question":null},
+  {"id":"ctr-01","route":"ACT","blocker":"none","question":null},
+  {"id":"ctr-02","route":"ACT","blocker":"none","question":null},
+  {"id":"ctr-03","route":"ACT","blocker":"none","question":null},
+  {"id":"ctr-04","route":"ACT","blocker":"none","question":null},
+  {"id":"ctr-05","route":"ACT","blocker":"none","question":null},
+  {"id":"ctr-06","route":"ASK","blocker":"interface","question":"What compatibility or retirement plan is authorized for external clients of the public webhook endpoint?"}
+]

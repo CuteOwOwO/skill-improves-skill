@@ -1,0 +1,24 @@
+{
+  "models": ["gpt-5.6-sol", "gpt-5.6-terra", "gpt-5.6-luna"],
+  "reasoning_effort": "low",
+  "calibration": {
+    "total": 16,
+    "gpt-5.6-sol": {"compact": 16, "balanced": 15, "detailed": 16},
+    "gpt-5.6-terra": {"compact": 16, "balanced": 16, "detailed": 16},
+    "gpt-5.6-luna": {"compact": 15, "balanced": 15, "detailed": 15}
+  },
+  "hidden": {
+    "total": 12,
+    "gpt-5.6-sol": {"original_contract": 11, "general_fit_contract": 12},
+    "gpt-5.6-terra": {"original_contract": 11, "general_fit_contract": 12},
+    "gpt-5.6-luna": {"original_contract": 9, "general_fit_contract": 12}
+  },
+  "format_violations": 0,
+  "word_counts": {"compact": 83, "balanced": 137, "detailed": 251, "general_fit": 144},
+  "notes": [
+    "Every benchmark execution used a fresh agent that could not read answer keys or other runs.",
+    "The general-fit candidate was frozen before hidden evaluation.",
+    "Hidden case h05 was independently adjudicated as interface by Sol, Terra, and Luna after outputs exposed a key ambiguity; this post-hoc correction is a benchmark limitation.",
+    "This is one batched sample per condition and does not establish repeated-run reliability or global prompt minimality."
+  ]
+}

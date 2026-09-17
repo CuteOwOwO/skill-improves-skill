@@ -1,0 +1,14 @@
+[
+  {"id":"hid-01","route":"ASK","blocker":"interface","question":"What compatibility window or dual-write policy should preserve existing consumers of user_id while introducing account_id?"},
+  {"id":"hid-02","route":"ASK","blocker":"interface","question":"What migration policy should customer scripts follow before the public --legacy-auth option is removed?"},
+  {"id":"hid-03","route":"ASK","blocker":"interface","question":"What transition policy should external subscribers use when invoice.paid is replaced by invoice.settled?"},
+  {"id":"hid-04","route":"ASK","blocker":"interface","question":"What alias or migration behavior should preserve deployed customer files using retry_count?"},
+  {"id":"hid-05","route":"ASK","blocker":"side_effect","question":"Which workers and recovery owner should be accounted for before purging the shared retry-dead-letter queue?"},
+  {"id":"hid-06","route":"ASK","blocker":"side_effect","question":"What rollout sequence, dependent-service checks, and rollback plan should govern the immediate production TLS certificate rotation?"},
+  {"id":"hid-07","route":"ASK","blocker":"side_effect","question":"What current traffic, external readers, and restoration procedure must be confirmed before dropping old-reporting?"},
+  {"id":"hid-08","route":"ASK","blocker":"side_effect","question":"What downstream operational effects and re-enable procedure should be confirmed before disabling the remote billing reconciliation job?"},
+  {"id":"hid-09","route":"ACT","blocker":"none","question":null},
+  {"id":"hid-10","route":"ACT","blocker":"none","question":null},
+  {"id":"hid-11","route":"ACT","blocker":"none","question":null},
+  {"id":"hid-12","route":"ACT","blocker":"none","question":null}
+]

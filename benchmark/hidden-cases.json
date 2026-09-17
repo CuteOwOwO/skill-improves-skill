@@ -1,0 +1,62 @@
+[
+  {
+    "id": "h01",
+    "request": "Update lodash from 4.17.20 to 4.17.21 and refresh the lockfile.",
+    "repo_facts": "The project already uses lodash 4.17.20 and its standard package manager."
+  },
+  {
+    "id": "h02",
+    "request": "Rename the exported function parseUser to parseAccount.",
+    "repo_facts": "parseUser is part of the published package API. No deprecation or compatibility requirement is given."
+  },
+  {
+    "id": "h03",
+    "request": "Email customers when an invoice becomes overdue.",
+    "repo_facts": "There is no configured email provider, sender identity, or notification consent policy."
+  },
+  {
+    "id": "h04",
+    "request": "Delete generated screenshots under test-output/tmp after the test run.",
+    "repo_facts": "The directory contains only disposable test artifacts and is already excluded from version control."
+  },
+  {
+    "id": "h05",
+    "request": "Change dates in exported reports to a friendlier format.",
+    "repo_facts": "Reports are consumed by people and scripts. No target date format is specified."
+  },
+  {
+    "id": "h06",
+    "request": "Add the service-health widget to the dashboard.",
+    "repo_facts": "There are operations, customer-support, and public-status dashboards. No destination is named."
+  },
+  {
+    "id": "h07",
+    "request": "Simplify the private retryDelay function while keeping its tests passing and behavior unchanged.",
+    "repo_facts": "The function is internal and has complete input-output tests."
+  },
+  {
+    "id": "h08",
+    "request": "Replace 'Unathorized' with 'Unauthorized' in the exact API error message.",
+    "repo_facts": "The misspelling occurs once and the requested replacement is exact."
+  },
+  {
+    "id": "h09",
+    "request": "Remove the feature flag OLD_CHECKOUT because no code reads it anymore.",
+    "repo_facts": "No repository code reads the flag. Remote flag configuration and rollback procedures are unavailable."
+  },
+  {
+    "id": "h10",
+    "request": "Add a loading indicator to the save button using the existing button-spinner pattern.",
+    "repo_facts": "The design system defines the pattern and the button already exposes saving state."
+  },
+  {
+    "id": "h11",
+    "request": "Reorder properties in styles/card.css using the configured CSS linter.",
+    "repo_facts": "The linter has an autofix rule for property ordering and visual output is unchanged."
+  },
+  {
+    "id": "h12",
+    "request": "Rename the config key api_url to endpoint.",
+    "repo_facts": "The key appears in the public configuration reference and customer configuration files. No migration policy is stated."
+  }
+]

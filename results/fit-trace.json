@@ -1,0 +1,11 @@
+[
+  {
+    "contract_id": "router.blocker.interface-vs-side-effect",
+    "target": "gpt-5.6-luna",
+    "from_level": 0,
+    "to_level": 2,
+    "observed_failure": "A missing public endpoint compatibility policy was classified as side_effect rather than interface at all three whole-skill densities.",
+    "change": "Define blocker categories and state that public-consumer compatibility takes precedence over external operational effects.",
+    "merged_into_common_candidate": true
+  }
+]

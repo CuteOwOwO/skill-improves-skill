@@ -1,0 +1,30 @@
+skill: source-skill.md
+frozen_at: "2026-09-17T00:00:00+08:00"
+
+targets:
+  - {id: sol, model: gpt-5.6-sol, reasoning: low}
+  - {id: terra, model: gpt-5.6-terra, reasoning: low}
+  - {id: luna, model: gpt-5.6-luna, reasoning: low}
+
+contract:
+  - {id: C1, behavior: route, critical: true, rule: zero_observed_failures}
+  - {id: C2, behavior: blocker, critical: true, rule: zero_observed_failures}
+  - {id: C3, behavior: output_shape, critical: true, rule: zero_observed_failures}
+
+cases:
+  development: development-cases.json
+  development_oracle: development-key.json
+  hidden: hidden-cases.json
+  hidden_oracle: hidden-key.json
+
+execution:
+  independent_draws_per_case: 1
+  fresh_agent_per_target_candidate: true
+  hidden_isolated_until_candidate_freeze: true
+
+patch_search:
+  max_rounds: 1
+  one_contract_gap_per_patch: true
+  known_behavior_regressions_allowed: 0
+
+claim_scope: "Observed contract fit for this frozen single-draw experiment only."

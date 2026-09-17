@@ -1,0 +1,18 @@
+[
+  {"id":"c01","route":"ACT","blocker":"none"},
+  {"id":"c02","route":"ASK","blocker":"interface"},
+  {"id":"c03","route":"ASK","blocker":"behavior"},
+  {"id":"c04","route":"ACT","blocker":"none"},
+  {"id":"c05","route":"ASK","blocker":"permission"},
+  {"id":"c06","route":"ASK","blocker":"side_effect"},
+  {"id":"c07","route":"ASK","blocker":"target"},
+  {"id":"c08","route":"ACT","blocker":"none"},
+  {"id":"c09","route":"ACT","blocker":"none"},
+  {"id":"c10","route":"ACT","blocker":"none"},
+  {"id":"c11","route":"ACT","blocker":"none"},
+  {"id":"c12","route":"ASK","blocker":"permission"},
+  {"id":"c13","route":"ACT","blocker":"none"},
+  {"id":"c14","route":"ASK","blocker":"behavior"},
+  {"id":"c15","route":"ASK","blocker":"target"},
+  {"id":"c16","route":"ASK","blocker":"interface"}
+]

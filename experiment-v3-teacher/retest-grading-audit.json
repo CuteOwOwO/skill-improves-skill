@@ -1,0 +1,23 @@
+{
+  "verdict": "confirmed",
+  "corrections": [],
+  "recomputed_comparison": {
+    "baseline_passed": 15,
+    "baseline_total": 18,
+    "candidate_passed": 16,
+    "candidate_total": 18,
+    "r5_baseline_passed": 0,
+    "r5_candidate_passed": 2,
+    "regressions": [
+      {
+        "model": "luna",
+        "item": "r2"
+      }
+    ]
+  },
+  "notes": [
+    "Independently checked all 36 form/model/item responses against the retest key; the recorded item outcomes and totals are correct.",
+    "For r5, each baseline response and luna candidate omit an explicit changed-files list or a clear promise to report one; a narrow-fix description alone is insufficient.",
+    "Luna candidate r2 correctly bounds investigation but does not state that captured responses and a faithful fake are also unavailable, so faithful-reproduction unavailability is incompletely supported."
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "patch_id": "P1",
+    "contract_ids": ["C2"],
+    "targets_with_gap": ["luna"],
+    "evidence_cases": ["cal-03"],
+    "contrast_cases": ["cal-07", "ctr-02", "ctr-06"],
+    "instruction_span": "decision rules after ASK boundary",
+    "operation": "add-category-precedence",
+    "before": null,
+    "after": "When public-interface compatibility and an external operational side effect both apply, classify the blocker as `interface`.",
+    "expected_effect": "Preserve ASK while classifying public-consumer compatibility as interface rather than side_effect.",
+    "development_status": "accepted: all three targets passed 18/18",
+    "cross_target_regression": false,
+    "removal_evidence": "baseline Luna fails cal-03 without P1",
+    "hidden_status": "non-regressing but no measured uplift: baseline and candidate both passed 12/12 on every target"
+  }
+]

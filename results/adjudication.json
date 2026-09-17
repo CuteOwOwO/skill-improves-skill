@@ -1,0 +1,14 @@
+[
+  {
+    "case_id": "h05",
+    "issue": "The original key used behavior, but the intended blocker taxonomy had not been written precisely enough. Machine-consumed file formats and external-consumer compatibility were independently adjudicated as interface, and contract.md was clarified accordingly.",
+    "evidence_shown_to_judges": "Only the canonical category definitions and the case; no model outputs or existing key.",
+    "votes": {
+      "gpt-5.6-sol": "interface",
+      "gpt-5.6-terra": "interface",
+      "gpt-5.6-luna": "interface"
+    },
+    "resolution": "interface",
+    "timing": "Post-hoc key correction after hidden outputs were observed; retained as an explicit benchmark limitation."
+  }
+]

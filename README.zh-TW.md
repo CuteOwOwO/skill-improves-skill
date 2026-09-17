@@ -45,9 +45,13 @@ Keep one common skill and show the evidence for every retained change.
 
 平均分數變高，不能掩蓋某個目標仍然失敗。
 
-## 小型 pilot
+## 相關研究
 
-在一次三個 target 的小型測試中，一條新指令讓受測行為從 0/3 提升到 2/3，但其中一個 target 仍然漏掉它，並在另一題退步，因此補丁被退回。這不能證明 targets 之間存在穩定差異；它只說明為什麼需要重測閘門。
+- **[A Psychometric Framework for Evaluating and Shaping Personality Traits in Large Language Models](https://doi.org/10.1038/s42256-025-01115-6)** — Serapio-García et al., *Nature Machine Intelligence*, 2025。研究涵蓋 18 個 LLM 與多種 prompting conditions；輸出特質測量的可靠性與效度會受到模型規模、instruction tuning 等因素影響，而且這些特質也能透過 prompting 有方向地調整。這支持我們針對每個 target configuration 實測，而不是假設同一條指令在所有環境都會產生相同行為。
+
+- **[Large Language Models as Optimizers](https://arxiv.org/abs/2309.03409)** — Yang et al., *ICLR*, 2024。OPRO 讓 LLM 根據先前候選解法與評分提出新解法，也示範了如何針對任務正確率優化自然語言指令。本 skill 採用相近的「產生、評估、改善」概念，並另外加入封存重測與 regression 即退回的驗收閘門。
+
+- **[You Don’t Need a Personality Test to Know These Models Are Unreliable](https://aclanthology.org/2024.naacl-long.295/)** — Shu et al., *NAACL*, 2024。作者測試 17 個 LLM，發現包含回答選項順序與否定句在內的小幅 prompt 變動，都可能明顯降低回答一致性。這支持我們固定測試條件、加入 contrast cases，並在接受指令修改前使用全新執行做 regression check。
 
 ## 檔案
 

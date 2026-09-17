@@ -45,9 +45,13 @@ A patch ships only when:
 
 A higher average score cannot hide one failing target.
 
-## Tiny pilot
+## Related research
 
-In a small three-target pilot, one instruction improved the tested behavior from 0/3 passes to 2/3. One target still missed it and regressed elsewhere, so the patch was rejected. This does not establish stable differences between targets; it shows why the retest gate matters.
+- **[A Psychometric Framework for Evaluating and Shaping Personality Traits in Large Language Models](https://doi.org/10.1038/s42256-025-01115-6)** — Serapio-García et al., *Nature Machine Intelligence*, 2025. Across 18 LLMs and varied prompting conditions, the reliability and validity of measured output traits depended on properties such as scale and instruction tuning; the traits could also be deliberately shaped through prompting. This supports measuring behavior for each target configuration instead of assuming one instruction behaves identically everywhere.
+
+- **[Large Language Models as Optimizers](https://arxiv.org/abs/2309.03409)** — Yang et al., *ICLR*, 2024. OPRO uses an LLM to propose new solutions from previously evaluated candidates and their scores, including optimizing natural-language instructions for task accuracy. This skill follows the same broad generate–evaluate–improve idea, with an added sealed retest and reject-on-regression gate.
+
+- **[You Don’t Need a Personality Test to Know These Models Are Unreliable](https://aclanthology.org/2024.naacl-long.295/)** — Shu et al., *NAACL*, 2024. Testing 17 LLMs, the authors found that minor prompt changes—including response-option order and negation—could substantially reduce consistency. This motivates frozen test conditions, contrast cases, and fresh regression checks before accepting an instruction change.
 
 ## Files
 
